@@ -1,0 +1,92 @@
+<!--vs. Humidity-->
+
+<!DOCTYPE html>
+<!CSS Stylesheets with Relative Paths>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude vs Humidity</title>
+
+  
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ 
+</head>
+
+
+<body>
+    <!-- Section 1: Navbar-->
+    <!--nav bar list-->
+    <nav class="navbar navbar-default">
+         <!-- Place Fluid Container in Navbar -->
+        <div class="container-fluid">
+            <!-- Designate a navbar heading -->
+            <div class="navbar-header">
+                <h2 id = "Latitude">Latitude</h2>
+            </div>
+            <div class=“collapse navbar-collapse" id=“bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="data.html" >Data</a></li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plot
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="comp_temp.html">Temperature</a></li>
+                            <li><a href="comp_humidity.html">Humidity</a></li>
+                            <li><a href="comp_cloudiness.html">Cloudiness</a></li>
+                            <li><a href="comp_windspeed.html">Wind Speed</a></li>
+                        </ul>
+                    <li><a href="index.html">Home</a></li>
+                    </li>
+                </ul>
+            </div>           
+             
+        </div>
+    </nav>
+   <!--main-->
+   <div class="container-fluid" >
+    <div id= "main-container-fluid">
+        <div class ="row">
+                 
+            <div class="col-md-6">
+                <h1>Latitude vs Humidity</h1>
+                <hr>
+                <img src="assets/humidity-Copy1.png" alt: "humidity" style ="width:600px;height:400px;">
+                <p style="text-align:justify;"> "There does not seem to be a strong relationship between latitude and percent of humidity. It is possible that the possibility of lower humidity is higher the further away from the equator as compared to cities near the equator, however, more data points would be required to demonstrate a greater relationship. " </p>
+                
+            </div>
+            <div class="col-md-4">
+                    <h2 id="side-box">Visualizations</h2>
+                    <hr>
+                   <div class="row">  
+                           <img src="assets/temperature-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                           <img src="assets/humidity-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                              
+                           <img src="assets/cloudiness-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                           <img src="assets/wind speed-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                   </div>
+               </div>
+                     
+           </div> 
+       </div>    
+   </div>
+   <hr id=hr>
+       <div class = "row" id = "footer">
+          
+           <p style="text-align:center;">@Copyright Coding Bootcamp 2017</p>
+       </div>
+</body>
+</html>
+
+        
+        
+            
+        
+        
+        

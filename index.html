@@ -1,88 +1,94 @@
-# Activity 1 - Student Bio Page
-
-* On your own, create a simple bio page for yourself using the following HTML elements...
-
-  * A header that will store your name inside of it
-  * An image that will act as a stand-in for your picture with an `alt` attribute which gives a very basic description of the image
-  * Two paragraphs that will have text describing who you are
-  * An unordered list of links that connect to your social media pages
-  * A table that will contain three columns and some data on your favorite movies, songs, books, or activities
-
-### Hints
-
-* Dummy images can be found at [lorempixel.com](http://lorempixel.com/) and dummy text can be found at [lipsum.com](http://www.lipsum.com/). Focus on getting the entire page working before diving into more specific text and images.
-
-### Bonuses
-
-* Look into how one might go about linking one custom-made HTML page to another. Once you have found out how, try creating a link from your bio page you have just created to one of the pages you created last class.
+<!--Landing PANGE>
 
 <!DOCTYPE html>
+<!CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
-
 <head>
   <meta charset="UTF-8">
-  <title>My Bio</title>
+  <title>Latitude vs weather</title>
+
+  
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ 
 </head>
 
-  <body>
-    <!-- Headline -->
-    <h1>Wendy Walsh</h1>
-   <!-- Image -->
-   <img src="https://avatars1.githubusercontent.com/u/29587146?v=4" alt="image stand in" >
-   <br>
 
-  <textarea rows="10" cols="50">
-    My name is Wendy Walsh. 
-    Born and raised in Aiea, Hawaii. 
+<body>
+    <!-- Section 1: Navbar-->
+    <!--nav bar list-->
+    <nav class="navbar navbar-default">
+         <!-- Place Fluid Container in Navbar -->
+        <div class="container-fluid">
+            <!-- Designate a navbar heading -->
+            <div class="navbar-header">
+                <h2 id = "Latitude">Latitude</h2>
+            </div>
+            <div class=“collapse navbar-collapse" id=“bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="data.html">Data</a></li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plot
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="comp_temp.html">Temperature</a></li>
+                            <li><a href="comp_humidity.html">Humidity</a></li>
+                            <li><a href="comp_cloudiness.html">Cloudiness</a></li>
+                            <li><a href="comp_windspeed.html">Wind Speed</a></li>
+                        </ul>
+                    <li><a href="#">Home</a></li>
+                        
+                    </li>
+                </ul>
+            </div>           
+             
+        </div>
+    </nav>
+    <!--main content-->
+    <div class="container-fluid" >
+        <div id= "main-container-fluid">
+             <div class ="row">
+         
+                 <div class="col-md-6">
+                      <h1>Summary: Latitude vs. X</h1>
+                     <hr>
+                     <img src="assets/temperature-Copy1.png" alt: "temperature" style="width:300px;height:200px;"class = "temp">
+                    <p style="text-align:justify;"> "What does the weather look like as we get closer to the equator? This analysis looks at temperature, humidity, cloudiness, and wind speed across latitude across the globe. The initial coordinates were randomly chosen from json file of cities from the openweather API. From the 2000 plus listed cities, 700 were randomly chosen as a sample set.  </p>
+                     <p style="text-align:justify;">"Matplotlib was used to create visualizations for each weather variable. This site contain the plots for temperature, humidy, cloudiness, and wind speed versus latitude as well as the source data which includes city names, coordinates, and dates of when data was pulled. </p>
+                </div>
 
-    I like gardening and building things.
-    I like building things but I am not good at it. 
+                <div class="col-md-4">
+                     <h2 id="side-box">Visualizations</h2>
+                     <hr>
+                    <div class="row">  
+                            <img src="assets/temperature-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                            <img src="assets/humidity-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                               
+                            <img src="assets/cloudiness-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                            <img src="assets/wind speed-Copy1.png" alt: "temperature" style ="width:200px;height:200px;">
+                    </div>
+                </div>
+                      
+            </div> 
+        </div>    
+    </div>
+    <hr id=hr>
+        <div class = "row" id = "footer">
+           
+            <p style="text-align:center;">@Copyright Coding Bootcamp 2017</p>
+        </div>
+</body>
+</html>
 
-  </textarea>
 
-  <ul> <!--Unordered list-->
-             <li>
-                  <a href="https://github.com/wendywalsh"target="_blank">github</a>
-                  <a href="https://github.com/wendywalsh"target="_blank">github</a>
-              </li>
-          </ul>
-
-
-          <table border ="1" style="width:50%">
-            <tr>
-              <th>Favorite Moive</th>
-              <th>Favorite books/aurthor</th> 
-              <th>Favorite restaurants</th>
-            </tr>
-            <tr>
-              <td>Pride and Prejudice</td>
-              <td>Siddartha</td> 
-              <td>Kome</td>
-            </tr>
-            <tr>
-              <td>Underworld</td>
-              <td>Tich Nat Han</td> 
-              <td>Salty Sow</td>
-            </tr>
-
-            <tr>
-                <td>Harry Potter</td>
-                <td>Monty Don</td> 
-                <td>Vox</td>
-              </tr>
-          </table>
+    
 
 
 
-
-
-  <!-- Link with New Tab -->
-  <a href="https://www.google.com" 
-  <br>
-
-  <!-- Bold Link -->
-  <strong><a href="https://www.youtube.com">This is a bold link</a></strong>
-  <br>
-
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
+   
