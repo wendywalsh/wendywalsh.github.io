@@ -1,0 +1,179 @@
+
+/*navbar background color*/
+.navbar-default{
+    background-color: white;
+}
+
+/*navbar-header*/
+#Latitude{
+    color:white;
+    background-color: rgb(55, 168, 168);
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar li{
+    display: inline-block;
+    padding: 20p;
+    margin-right:10px;
+    margin-left: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* main content*/
+#main-container-fluid{
+    background-color: rgb(196, 188, 188);
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -20px;
+}
+
+.temp{
+        float: left;
+        width: 250px;
+        shape-outside: assets/temperature-Copy1.png;
+        shape-margin:20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+}
+
+.col-md-6{
+    color:rgb(55, 168, 168);
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top:0px;
+    padding-bottom:50px;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    background-color:white;
+    flex: 50%;
+    
+}
+
+.col-md-4{
+    color:rgb(55, 168, 168);
+    padding-left: 50px;
+    padding-right:30px;
+    padding-top:0px;
+    padding-bottom:50px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    background-color:white;
+    align-content: center;
+    flex: 50%;
+    
+}
+
+#row_1{
+    flex: 50%;
+    padding: 0 4px;
+}
+#row_2{
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.col-md-2m img{
+        flex: 50%;
+        padding: 0 4px;
+}
+
+
+#title{
+    color:rgb(55, 168, 168);
+}
+
+.col-md-10{
+    color:rgb(55, 168, 168);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    padding-left: 20px;
+    padding-right:20px;
+    background-color:white;
+    
+}
+#comparison{
+    color:rgb(55, 168, 168);
+    margin-left: 110px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    padding-top:50px;
+    padding-left: 70px;
+    padding-right:30px;
+    background-color:white;
+    
+}
+
+.col-md-12{
+    color:rgb(55, 168, 168);
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top:5px;
+    padding-bottom:50px;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    background-color:white;
+    
+}
+#explanations{
+    color: black;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.table-responsive{
+    width:100%;
+    padding-right: 90px;
+}
+
+
+#main{
+    margin-left: 80px;
+    padding-top:100px;
+    padding-left:50px;
+    
+}
+#comparison_main{
+
+    margin-right= 0px;
+    padding-right:0px;
+
+}
+
+
+/*footer*/
+#footer {
+    color:white;
+    background-color: rgb(82, 85, 85);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right:0px;
+    
+}
+#hr{
+        color:rgb(55, 168, 168);;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 0px;
+        height:5px;
+
+}
